@@ -388,8 +388,9 @@ img {
 }
 
 .clients-link {
-  display: block;
+  display: flex;
   padding: 16px 32px;
+  color: #afb1b8;
   border: 1px solid var(--secondary-border-color);
   border-radius: 4px;
 }
@@ -400,6 +401,16 @@ img {
 
 .clients-link:hover {
   border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: currentColor;
 }
 
 /* -----------FOOTER----------- */
