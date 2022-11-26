@@ -158,12 +158,23 @@ img {
 }
 
 .header-contact {
+  display: flex;
+  align-items: center;
   color: var(--second-link-color);
 }
 
 .header-contact:hover,
 .header-contact:focus {
   color: var(--accent-color);
+}
+
+.header-contact-img {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.header-contact-img:hover {
+  fill: currentColor;
 }
 
 /* -----------HERO----------- */
@@ -231,31 +242,17 @@ img {
   margin-left: 30px;
 }
 
-.benefits-items::before {
-  display: block;
+.benefits-image {
+  display: flex;
   margin-bottom: 30px;
-  content: "";
   height: 120px;
+  width: 270px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
 }
 
 .benefits-subtitle {
@@ -370,8 +367,6 @@ img {
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 
@@ -449,7 +444,7 @@ img {
   color: var(--accent-color);
 }
 
-.footer-address {
+.address {
   color: var(--third-link-color);
 }
 
@@ -493,8 +488,6 @@ img {
 }
 
 .second-icon {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 
